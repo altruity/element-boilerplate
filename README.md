@@ -1,17 +1,32 @@
-# &lt;my-element&gt; ![Bower Version](https://badge.fury.io/bo/element-boilerplate.svg)
+# &lt;x-dribbble&gt;
 
-> TODO: Write a project description
+A [Polymer](http://polymer-project.org) element for querying results from the [Dribbble API](https://dribbble.com/api)
+
+> Maintained by [Dano Alexander](https://github.com/altruity).
+
+Inspired by <a href="https://github.com/addyosmani/x-instagram/" target="_blank">Addy Osmani's x-instagram</a> and <a href="https://github.com/tamaspiros/x-flickr/" target="_blank">Tamas Piros's x-flickr</a>
+
 
 ## Demo
 
-[Check it live!](http://webcomponents.github.io/element-boilerplate)
+[Check it live!](http://webcomponents.github.io/x-dribbble)
+
+
+## Install
+
+Using [Bower](http://bower.io), run:
+
+```bash
+$ bower install --save x-dribbble
+```
+
 
 ## Usage
 
 1. Install the component using [Bower](http://bower.io/):
 
     ```sh
-    $ bower install my-element --save
+    $ bower install x-dribbble --save
     ```
 
 2. Import Web Components' polyfill:
@@ -23,49 +38,26 @@
 3. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/my-element/dist/my-element.html">
+    <link rel="import" href="bower_components/x-dribbble/dist/x-dribbble.html">
     ```
 
 4. Start using it!
 
     ```html
-    <my-element></my-element>
+    <x-dribbble></x-dribbble>
     ```
+
 
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`name`     | *string*                  | `World`             | Lorem ipsum
+NOTE: Currently no API key/authentication required with Dribbble's API (_as of Apr 20, 2014_)
 
-## Development
+Attribute      | Options         | Default          | Description
+---            | ---             | ---              | ---
+`list`         | *string*        | ``               | The category to query for (e.g 'popular')
+`count`        | *integer*       | `10`             | The max number of results to return
+`shotsPerRow`  | *integer*       | `5`              | The number of shots that will show up on a row
 
-In order to run it locally you'll need to fetch some dependencies and a basic server setup.
-
-1. Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
-
-    ```sh
-    $ [sudo] npm install -g bower grunt-cli
-    ```
-
-2. Install local dependencies:
-
-    ```sh
-    $ bower install && npm install
-    ```
-
-3. To test your project, start the development server and open `http://localhost:8000`.
-
-    ```sh
-    $ grunt
-    ```
-
-4. Once you finish developing it, build the distribution files and publish it on Bower.
-
-    ```sh
-    $ grunt build
-    $ bower register my-element https://github.com/you/my-element
-    ```
 
 ## Contributing
 
@@ -75,9 +67,11 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+
 ## History
 
-For detailed changelog, check [Releases](https://github.com/webcomponents/element-boilerplate/releases).
+For detailed changelog, check [Releases](https://github.com/webcomponents/x-dribbble/releases).
+
 
 ## License
 
